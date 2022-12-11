@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(0deg,#9370DB,#9400D3) ;
+    overflow-wrap: normal;
+}
+.profile{
+    width: auto;
+    height: auto;
+    /* border: 1px solid #555; */
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    
+}
+.profile .card-profile{
+    /* border: 1px solid #555; */
+    text-align: center;
+    width: 240px;
+    height: 300px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    box-shadow: -10px 10px 5px #000;
+    transform: translate(-50deg) ;
+    margin-right: 40px;
+ 
+}
+.profile .card-profile .img-slide{
+    position: absolute;
+    width: 240px;
+    height: 200px;
+    right: -300px;
+    transition: right 1s;
+    border-radius: 25px;
+    
+}
+.profile .card-profile .img-index{
+    position: absolute;
+    width: 240px;
+    height: 300px;
+    right: 0px;
+    border: 1px solid #555;
+    border-radius: 25px;
+    top: 0px;
+    opacity: 1;
+    z-index: 1;
+    transition: top 0.5s ;
+    
+}
+.profile .card-profile .detail{
+    position: absolute;
+    width: 240px;
+    height: 250px;
+    bottom: -300px;
+    border: 1px solid #555;
+    transition: bottom 1s ;
+    padding: 10px;
+    border-radius: 25px;
+    background: linear-gradient(0deg,#9370DB,#9400D3);
+    color: #fff;
+}
+.profile .card-profile .detail button{
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    background: #8A2BE2;
+    border-radius: 25px;
+    border: none;
+    color: aliceblue;
+    bottom: 60px;
+    left: 80px;
+    box-shadow: -10px 10px 30px rgb(19, 18, 18);
+}
+
+.profile .card-profile:hover .img-slide{
+    right: 0px;
+}
+.profile .card-profile:hover .detail{
+    bottom: -30px;
+}
+.profile .card-profile:hover .img-index{
+    top: -300px;
+    opacity: 0.5;
+}
+/*  */
+
+/*  */
